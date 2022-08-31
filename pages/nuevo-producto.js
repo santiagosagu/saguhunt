@@ -109,6 +109,7 @@ const NuevoProducto = () => {
         ) : (
           <>
             <h1
+              style={{ textAlign: "center" }}
               css={css`
                 text-align: center;
                 margin-top: 5rem;
@@ -150,7 +151,7 @@ const NuevoProducto = () => {
 
                 {errores.empresa && <Error>{errores.empresa}</Error>}
 
-                <Campo>
+                <Campo style={{ display: "block" }}>
                   <label htmlFor="imagen">Imagen</label>
                   <FileUploader
                     accept="image/*"

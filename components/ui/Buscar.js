@@ -6,7 +6,7 @@ import Router from "next/router";
 const InputText = styled.input`
   border: 1px solid var(--gris3);
   padding: 1rem;
-  min-width: 250px;
+  min-width: 335px;
   height: 4rem;
 `;
 const InputSubmit = styled.button`
@@ -44,7 +44,10 @@ const Buscar = () => {
   };
 
   return (
-    <form style={{ display: "flex" }} onSubmit={buscarProducto}>
+    <form
+      style={{ display: "flex", justifyContent: "center" }}
+      onSubmit={buscarProducto}
+    >
       <InputText
         type="text"
         placeholder="Buscar Productos"

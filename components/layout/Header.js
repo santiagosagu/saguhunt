@@ -21,10 +21,19 @@ const Content = styled.div`
     display: flex;
     margin-top: 1rem;
     align-items: center;
+    justify-content: space-between;
   }
 `;
 
 const Logo = styled.a`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
   color: var(--naranja);
   font-size: 4rem;
   //   line-height: 0;
