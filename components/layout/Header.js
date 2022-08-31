@@ -8,13 +8,19 @@ import Boton from "../ui/Boton";
 import { FirebaseContext } from "../../firebase";
 
 const ContenedorHeader = styled.div`
-  //   max-width: 1200px;
-
   width: 95%;
   margin: 0 auto;
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+  }
+`;
+
+const Content = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
   }
 `;
 
@@ -25,6 +31,7 @@ const Logo = styled.a`
   font-weight: 700;
   font-family: "Roboto Slab", serif;
   margin-right: 2rem;
+  cursor: pointer;
 `;
 
 const Header = () => {
@@ -38,13 +45,13 @@ const Header = () => {
       `}
     >
       <ContenedorHeader>
-        <div
-          style={{ display: "flex", marginTop: "1rem", alignItems: "center" }}
-          //   css={css`
-          //     display: flex;
-          //     align-items: center;
-          //     margin-top: 2rem;
-          //   `}
+        <Content
+        // style={{ display: "flex", marginTop: "1rem", alignItems: "center" }}
+        //   css={css`
+        //     display: flex;
+        //     align-items: center;
+        //     margin-top: 2rem;
+        //   `}
         >
           <Link href="/">
             <Logo>R-A Sales and Services</Logo>
@@ -53,7 +60,7 @@ const Header = () => {
           <Buscar />
 
           <Navegacion />
-        </div>
+        </Content>
 
         <div
           css={css`
